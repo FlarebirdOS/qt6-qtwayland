@@ -1,6 +1,6 @@
 pkgname=qt6-qtwayland
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Provides APIs for Wayland"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -27,7 +27,7 @@ makedepends=(
     'vulkan-headers'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(a1717e5bf742307ae1154812ad6131316f53bb1feeea0260e721033f19ff851b)
+sha256sums=(fd3dfcedcc7fe901bcfd40358fb536a33100b6164615b9e67e8e04bea9ba35fd)
 
 build() {
     cd ${pkgname#*-}
